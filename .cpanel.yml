@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/gregs160/crmss.org
+    - /bin/cp -R _site $DEPLOYPATH
