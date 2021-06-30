@@ -1,0 +1,15 @@
+{% assign pageNavItemIdArray = include.PageNavItemIds | split: " " %}
+
+<div class="pagenavcontainer">
+
+    {% for pageNavItemId in pageNavItemIdArray %}
+    
+    {% assign pageNavItem = page.pageNavItems | where: "id", pageNavItemId | first %}    
+    
+        <div class="pagenavspan">
+            <a class="pagenav custom-underline" onclick="javascript:Scroll('{{ pageNavItem.target }}');">{{pageNavItem.title}}</a>
+        </div>
+    
+    {% endfor %}
+  
+</div>

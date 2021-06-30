@@ -3,12 +3,12 @@ id: contact
 layout: default
 title: Contact
 description:
-pagenavitems:
+pageNavItems:
   - title: Apply to CRMSS 2021
     target: "#apply"
     id: 1
   - title: Contact Form
-    target: "#contactform"
+    target: "#contact-form"
     id: 2
   - title: Find CRMSS On A Map
     target: "#map"
@@ -18,8 +18,8 @@ pagenavitems:
 <center>
   <h1>How to Apply or Contact Us</h1>
 
-  {% include pagenav.html pagenavitemids="1 2" %}
-  {% include socialbuttons.html %}
+  {% include page-nav.html pageNavItemIds="1 2" %}
+  {% include social-buttons.html %}
   
 </center>
 <center>
@@ -86,7 +86,7 @@ pagenavitems:
 
 <hr />
 
-<h2 id="contactform">Contact Form</h2>
+<h2 id="contact-form">Contact Form</h2>
 <a class="backtotop" onclick="javascript:ScrollToTop();">Back to top</a>
 <h3>
   <center>
