@@ -59,7 +59,7 @@ hr {
   border-radius: 8px;
 }
 
-.bannerholder {
+.banner-holder {
   background-size: cover;
   background-position: left bottom;
   width: 100%;
@@ -178,7 +178,7 @@ hr {
     box-shadow: none;
   }
   #big-container,
-  .bannerholder,
+  .banner-holder,
   #content {
     border-radius: 0px;
   }
@@ -193,7 +193,7 @@ hr {
     font-size: 1.5em;
     bottom: 25px;
   }
-  .bannerholder {
+  .banner-holder {
     height: 87px;
   }
   h1 {
@@ -213,7 +213,6 @@ hr {
 @import "applicationform";
 @import "contact";
 @import "course";
-// @import "covid-survey";
 @import "covid-warnings";
 @import "customunderline";
 @import "donate";

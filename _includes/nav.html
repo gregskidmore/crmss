@@ -1,7 +1,7 @@
 <nav id="nav-main">
     <ul>
-        {% for navitem in site.navitems %}
-            <li><a href="{{navitem.url}}">{{navitem.title}}</a></li>
+        {% for navItem in site.nav-items %}
+            <li><a href="{{navItem.url}}">{{navItem.title}}</a></li>
         {%- endfor %}
     </ul>
   </nav>

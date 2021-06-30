@@ -1,12 +1,13 @@
-#applicationformbanner, #covid-surveybanner {
-    // background-image: url("../img/applicationbanner.jpg");
-    // background-position: 0px -130px;
-    background-image: url("../img/bannersprite.jpg");
-    background-position: 1% 52%;
-    background-size: 450%;
-    background-repeat: no-repeat;
+#applicationform-banner,
+#covid-survey-banner {
+  // background-image: url("../img/applicationbanner.jpg");
+  // background-position: 0px -130px;
+  background-image: url("../img/banner-sprite.jpg");
+  background-position: 1% 52%;
+  background-size: 450%;
+  background-repeat: no-repeat;
 }
 
 #google-form-container {
-    padding-top: 5%;
+  padding-top: 5%;
 }

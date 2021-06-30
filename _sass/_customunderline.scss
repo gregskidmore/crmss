@@ -1,41 +1,41 @@
 .custom-underline {
-    position: relative;
-    display: inline-block;
-    /*font-size: 24px;*/
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .custom-underline,
-  .custom-underline:hover,
-  .custom-underline:focus,
-  .custom-underline:active {
-    color: black;
-    text-decoration: none;
-  }
-  
-  .custom-underline::after {
-    content: "";
-    position: absolute;
-  }
+  position: relative;
+  display: inline-block;
+  /*font-size: 24px;*/
+  font-weight: bold;
+  text-align: center;
+}
 
-  .custom-underline::after {
-    top: 105%;
-    height: 2px !important;
-    width:70%;
-    left:15%;
-    width: 15%;
-    left: 45%;
-    background-color: rgb(255, 1, 50);
-    // background-image: linear-gradient(to right, rgba(255,1,50,0), rgba(255,1,50,0.4), rgba(255,1,50,0));
-    transition: 0.3s ease-out all .1s;
-  }
-  
-  .pagenavspan:hover .custom-underline::after {
-    // width:110%;
-    // left: -5%;
-    width: 95%;
-    left: 2.5%;
-    // background-image: linear-gradient(to right, rgba(255,1,50,0), rgba(255,1,50,0.8), rgba(255,1,50,0));
-    transition: 0.2s ease all;
-  }
+.custom-underline,
+.custom-underline:hover,
+.custom-underline:focus,
+.custom-underline:active {
+  color: black;
+  text-decoration: none;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+}
+
+.custom-underline::after {
+  top: 105%;
+  height: 2px !important;
+  width: 70%;
+  left: 15%;
+  width: 15%;
+  left: 45%;
+  background-color: rgb(255, 1, 50);
+  // background-image: linear-gradient(to right, rgba(255,1,50,0), rgba(255,1,50,0.4), rgba(255,1,50,0));
+  transition: 0.3s ease-out all 0.1s;
+}
+
+.page-nav-span:hover .custom-underline::after {
+  // width:110%;
+  // left: -5%;
+  width: 95%;
+  left: 2.5%;
+  // background-image: linear-gradient(to right, rgba(255,1,50,0), rgba(255,1,50,0.8), rgba(255,1,50,0));
+  transition: 0.2s ease all;
+}
