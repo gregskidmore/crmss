@@ -1,0 +1,25 @@
+#parkingbanner, #lute-registrationbanner {
+  // background-image: url("../img/homebanner.jpg");
+  background-image: url("../img/bannersprite.jpg");
+  background-position: -10px 29%;
+  background-size: 270%;
+  background-repeat: no-repeat;
+}
+
+.parking-responsive,
+.lute-responsive {
+  margin-top: 5%;
+  padding-bottom: 0;
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.parking-responsive iframe,
+.lute-responsive iframe {
+  left: 0;
+  top: 0;
+  /* height: 100%; */
+  width: 100%;
+  position: relative;
+}

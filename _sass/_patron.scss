@@ -1,0 +1,18 @@
+#patronbanner {
+  background-image: url("../img/bannersprite.jpg");
+  background-position: 28% 50%;
+  background-size: 790%;
+  background-repeat: no-repeat;
+}
+
+#patroncontainer {
+  margin: 0;
+}
+
+#patroncontainer img {
+  width: clamp(100px, 80%, 400px);
+  margin: 3% 0 0 0;
+  box-shadow: $imgdropshadow;
+  border-radius: 8px;
+  cursor: zoom-in;
+}

@@ -1,0 +1,29 @@
+#donatebanner,
+#donate-thankyoubanner {
+  background-image: url("../img/bannersprite.jpg");
+  background-position: 99% 9%;
+  background-size: 400%;
+  background-repeat: no-repeat;
+}
+
+#donatecontainer {
+  margin: 5%;
+}
+
+#caroldiv {
+  border: thin red solid;
+  width: 92%;
+  margin: 6% auto;
+  padding: 3% 5%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: $dropshadow;
+  line-height: 1.6em;
+}
+
+#carolinmemoriamtitle {
+  font-family: "Playfair Display", serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}

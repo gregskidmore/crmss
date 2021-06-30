@@ -1,0 +1,58 @@
+#coursebanner {
+    // background-image: url("../img/coursebanner.jpg");
+    // background-position: 0px -130px;
+    background-image: url("../img/bannersprite.jpg");
+    background-position: 98% 58%;
+    background-size: 400%;
+    background-repeat: no-repeat;
+}
+
+ul.lectureslist {
+    width: 90%;
+}
+
+#typical-container {
+    display: inline-block;
+    /*border:thin green solid;*/
+    width: 95%;
+    margin-top: 10px;
+}
+
+.typical-row div {
+    font-size: 0.9em;
+}
+
+.typical-row {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2%;
+    height: auto;
+}
+
+.typical-leftcol {
+    /*border:thin red solid;*/
+    display: block;
+    margin: 1px;
+    width: 20%;
+    text-align: right;
+    margin-right: 4%;
+    float: left;
+    height: 50px;
+}
+
+.typical-rightcol {
+    /*border:thin blue solid;*/
+    display: block;
+}
+
+@media only screen and (min-width: 390px) and (max-width: 749px) {
+    .typical-leftcol {
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .typical-leftcol {
+        height: 20px;
+    }
+}

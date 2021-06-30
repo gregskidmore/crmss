@@ -1,0 +1,15 @@
+{% assign pagenavitemidarray = include.pagenavitemids | split: " " %}
+
+<div class="pagenavcontainer">
+
+    {% for pagenavitemid in pagenavitemidarray %}
+    
+    {% assign pagenavitem = page.pagenavitems | where: "id", pagenavitemid | first %}    
+    
+        <div class="pagenavspan">
+            <a class="pagenav custom-underline" onclick="javascript:Scroll('{{ pagenavitem.target }}');">{{pagenavitem.title}}</a>
+        </div>
+    
+    {% endfor %}
+  
+</div>

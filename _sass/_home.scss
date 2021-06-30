@@ -1,0 +1,51 @@
+#homebanner {
+  // background-image: url("../img/homebanner.jpg");
+  background-image: url("../img/homebanner.jpg");
+  background-position: 0px 73%;
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+
+#western-logo {
+  display: inline;
+  height: 15%;
+  /* 	max-width:400px;
+      min-width:150px; */
+  max-height: 500px;
+  /* 	margin-right:15%; */
+  box-shadow: $dropshadow;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.hostlogo {
+  display: block;
+  width: 90%;
+  max-width: 600px;
+  /* 	box-shadow: $dropshadow; */
+}
+
+// #huron-logo {
+//     padding-bottom: 20px;
+// }
+
+#brescia-logo {
+  padding-top: 20px;
+}
+
+#westernaccreditationlogo {
+  float: left;
+  padding-right: 40px;
+}
+
+@media only screen and (max-width: 750px) {
+  #westernaccreditationlogo {
+    padding-bottom: 15px;
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 394px;
+  }
+}

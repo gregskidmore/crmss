@@ -1,0 +1,229 @@
+$dropshadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+$imgdropshadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Raleway", sans-serif;
+  background-color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ff0132;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: #000000;
+  transition: color 1s;
+}
+
+ul {
+  -webkit-padding-start: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  margin-top: 30px;
+}
+
+p {
+  margin-top: 1%;
+  margin-bottom: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+
+hr {
+  margin: 40px 0px 40px 0px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#big-container {
+  position: relative;
+  margin: 5% 10%;
+  box-shadow: $dropshadow;
+  border-radius: 8px;
+}
+
+.bannerholder {
+  background-size: cover;
+  background-position: left bottom;
+  width: 100%;
+  height: 200px;
+  /*   border:thin blue solid; */
+  position: relative;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.topheadercontainer {
+  position: relative;
+  top: 100px;
+  /*   border:thin green solid; */
+  width: 90%;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.topheader {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: "Cinzel Decorative", cursive;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#content {
+  position: relative;
+  background-color: white;
+  margin-top: -30px;
+  z-index: 100;
+  padding-top: 1%;
+  padding-left: Max(10%, calc(50% - 55ch));
+  padding-right: Max(10%, calc(50% - 55ch));
+  padding-bottom: 50px;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.backtotop {
+  display: inline-block;
+  position: relative;
+  line-height: 0.8em;
+  cursor: pointer;
+  font-size: 0.8em;
+  top: -15px;
+  z-index: 200;
+}
+
+.backtotop::after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 150%;
+  height: 2px !important;
+  width: 40%;
+  left: 30%;
+  background-color: #000000;
+  transition: 0.3s ease-out all 0.1s;
+}
+
+.backtotop:hover::after {
+  width: 90%;
+  left: 5%;
+  transition: 0.2s ease all;
+}
+
+.button {
+  background-color: #ff0032;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px;
+  box-shadow: none;
+  transition: box-shadow ease 0.5s;
+}
+
+.button:hover {
+  box-shadow: $imgdropshadow;
+  color: white;
+  transition: 0.1s;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  box-shadow: none;
+  border: 0;
+  outline: none;
+  transform: translateY(2px);
+}
+
+@media only screen and (min-width: 1550px) {
+  .topheader {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .topheadercontainer {
+    max-width: 730px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #big-container {
+    margin: 0px;
+    box-shadow: none;
+  }
+  #big-container,
+  .bannerholder,
+  #content {
+    border-radius: 0px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .topheadercontainer {
+    max-width: 550px;
+  }
+  .topheader {
+    position: absolute;
+    font-size: 1.5em;
+    bottom: 25px;
+  }
+  .bannerholder {
+    height: 87px;
+  }
+  h1 {
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .topheader {
+    font-size: 6vw;
+  }
+  h1 {
+    font-size: 15pt;
+  }
+}
+
+@import "applicationform";
+@import "contact";
+@import "course";
+// @import "covid-survey";
+@import "covidwarnings";
+@import "customunderline";
+@import "donate";
+@import "featherlight.min";
+@import "home";
+@import "nav";
+@import "pagenav";
+@import "parking";
+@import "patron";
+@import "socialbuttons";
+@import "tutors";
+@import "upload";
+@import "videocontainer";

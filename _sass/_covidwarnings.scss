@@ -1,0 +1,25 @@
+#covidwarning {
+  border: thick red solid;
+  background-color: #c1c1c1;
+  padding: 2%;
+  margin: 3%;
+  box-shadow: $dropshadow;
+}
+
+#covidwarning-sub {
+  border: thin red solid;
+  border-radius: 8px;
+  width: 92%;
+  max-width: 800px;
+  margin: 4% auto;
+  // margin-bottom: 5%;
+  // margin-left: auto;
+  // margin-right: auto;
+  padding: 5px 15px;
+  box-shadow: $dropshadow;
+}
+
+#covidwarning h3 {
+  padding: 0;
+  margin: 0;
+}
