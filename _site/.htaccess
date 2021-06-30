@@ -1,0 +1,23 @@
+Options +FollowSymLinks -MultiViews
+# Turn mod_rewrite on
+RewriteEngine On
+RewriteBase /
+
+# Forward 'apply' to contact.html but leave 'apply' in the address bar
+# This does not work if 'apply.html' is asked for
+# -----------------
+RewriteRule ^apply(/.*)?$ /contact.html$1 [L,NC]
+
+# If you want to remove '.html' or '.htm' if that's what's been requested
+# uncomment the last two lines of this paragraph. This will cause the above rule
+# to still forward 'apply' to 'contact' correctly, but it means the url will change
+# in the address bar
+# ------------------
+# Remove .html (or htm) from visible URL (permanent redirect)
+# RewriteCond %{REQUEST_URI} ^/(.+)\.html?$ [nocase]
+# RewriteRule ^ /%1 [L,R=301]
+
+# Quietly point back to the HTML file (temporary/undefined redirect):
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [END]
