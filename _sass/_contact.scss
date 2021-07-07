@@ -18,7 +18,7 @@
   height: 200px;
   width: 90%;
   border-radius: 8px;
-  box-shadow: $dropshadow;
+  box-shadow: $drop-shadow;
 }
 
 .map-responsive iframe {
@@ -34,7 +34,7 @@ form[name="Question-form"] {
   padding: 10px;
   width: 90%;
   margin-top: 10px;
-  box-shadow: $dropshadow;
+  box-shadow: $drop-shadow;
   border-radius: 8px;
   background-color: #f6f6f6;
 }

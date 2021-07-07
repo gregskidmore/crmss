@@ -1,5 +1,5 @@
-$dropshadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-$imgdropshadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+$drop-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+$img-drop-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 body {
   width: 100%;
@@ -55,7 +55,7 @@ hr {
 #big-container {
   position: relative;
   margin: 5% 10%;
-  box-shadow: $dropshadow;
+  box-shadow: $drop-shadow;
   border-radius: 8px;
 }
 
@@ -100,7 +100,7 @@ hr {
   border-radius: 0px 0px 8px 8px;
 }
 
-.backtotop {
+.back-to-top {
   display: inline-block;
   position: relative;
   line-height: 0.8em;
@@ -110,7 +110,7 @@ hr {
   z-index: 200;
 }
 
-.backtotop::after {
+.back-to-top::after {
   display: inline-block;
   content: "";
   position: absolute;
@@ -122,7 +122,7 @@ hr {
   transition: 0.3s ease-out all 0.1s;
 }
 
-.backtotop:hover::after {
+.back-to-top:hover::after {
   width: 90%;
   left: 5%;
   transition: 0.2s ease all;
@@ -144,7 +144,7 @@ hr {
 }
 
 .button:hover {
-  box-shadow: $imgdropshadow;
+  box-shadow: $img-drop-shadow;
   color: white;
   transition: 0.1s;
 }
@@ -210,19 +210,19 @@ hr {
   }
 }
 
-@import "applicationform";
+@import "application-form";
 @import "contact";
 @import "course";
 @import "covid-warnings";
-@import "customunderline";
+@import "custom-underline";
 @import "donate";
 @import "featherlight.min";
 @import "home";
 @import "nav";
-@import "pagenav";
+@import "page-nav";
 @import "parking";
 @import "patron";
-@import "socialbuttons";
+@import "social-buttons";
 @import "tutors";
 @import "upload";
 @import "videocontainer";
