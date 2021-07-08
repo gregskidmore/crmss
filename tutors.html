@@ -10,6 +10,7 @@ page-nav-items:
     id: 1
   - title: Emily Atkinson
     target: "#emily"
+    represents: "The Tallis Scholars, The Cardinall's Musick, Taverner Consort"
     id: 2
   - title: "Dr. Kate Helsen"
     target: "#kate"
@@ -17,12 +18,15 @@ page-nav-items:
     id: 3
   - title: Matthew Long
     target: "#matthew"
+    represents: "I Fagiolini, The Sixteen, Tenebrae, The Dunedin Consort"
     id: 4
   - title: "Dr. Roseen Giles"
     target: "#roseen"
+    represents: "Duke University, North Carolina, USA"
     id: 5
   - title: Andrew Pickett
     target: "#andrew"
+    represents: "Royal College of Music (London, England), Early Music Society of Nova Scotia"
     id: 6
   - title: Lucas Harris
     target: "#lucas"
@@ -30,6 +34,7 @@ page-nav-items:
     id: 7
   - title: "CRMSS Guest Artist: Robert Hollingworth"
     target: "#robert"
+    represents: "Director of I Fagiolini, Reader in Music at the University of York, UK"
     id: 8
   - title: "CRMSS International Scholars"
     target: "#sves2021"
@@ -49,14 +54,8 @@ page-nav-items:
   <h1>CRMSS Tutors and International Scholars</h1>
 </center>
 
-{%- comment -%}
-{% include covid-warning-sub.html %}
-{%- endcomment -%}
-
 {% include page-nav.html page-nav-item-ids="1 3 7 10 11" %}
-
 <hr class="tutor-hr" />
-
 {% include page-nav.html page-nav-item-ids="9" %}
 
 <!-- ============ page-nav end  ============ -->
@@ -67,27 +66,19 @@ page-nav-items:
   {% assign tutor-page-data = page.page-nav-items | where: "id", tutor-id | first %}
   {% assign target-no-hash = tutor-page-data.target | remove_first: "#" %}
 
-  {% assign align-left = true %}
+  {% assign align-class = "imgLeftAlign" %}
   {% assign where-we-are = forloop.index | modulo: 2 %}
   {% if where-we-are == 0 %}
-    {% assign align-left = false %}
+    {% assign align-class = "imgRightAlign" %}
   {% endif %}
 
   <div class="each-tutor-container">
     <h2 id="{{target-no-hash}}" class="tutor-header">{{tutor-page-data.title}}</h2>
     <a class="back-to-top" onclick="javascript:ScrollToTop();">Back to top</a>
     <p><b>{{tutor-page-data.represents}}</b></p>
-
-    {% if align-left %}
-      <p>
-      <img src="/img/{{target-no-hash}}.jpg" class="imgLeftAlign" data-featherlight="/img/{{target-no-hash}}.jpg" loading="lazy" />
-    {% else %}
-      <p>
-      <img src="/img/{{target-no-hash}}.jpg" class="imgRightAlign" data-featherlight="/img/{{target-no-hash}}.jpg" loading="lazy" />
-    {% endif %}
     
     {%- assign tutor-include = "tutors/" | append: target-no-hash | append: ".html" -%}
-    {% include {{tutor-include}} %}
+    {% include {{tutor-include}} target=target-no-hash align=align-class %}
   </div>
 
   {% if forloop.last == false %}
