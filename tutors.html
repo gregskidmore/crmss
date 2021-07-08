@@ -56,11 +56,11 @@ page-nav-items:
 
 {% include page-nav.html page-nav-item-ids="1 3 7 10 11" %}
 <hr class="tutor-hr" />
-{% include page-nav.html page-nav-item-ids="9" %}
+{% include page-nav.html page-nav-item-ids="8 9" %}
 
 <!-- ============ page-nav end  ============ -->
 
-{% assign all-tutors-id-array = "1 3 7 10 11 9" | split: " " %}
+{% assign all-tutors-id-array = "1 3 7 10 11 8 9" | split: " " %}
 
 {% for tutor-id in all-tutors-id-array %}
   {% assign tutor-page-data = page.page-nav-items | where: "id", tutor-id | first %}
