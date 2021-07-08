@@ -1,15 +1,11 @@
 {% assign pageNavItemIdArray = include.page-nav-item-ids | split: " " %}
 
 <div class="page-nav-container">
+  {% for pageNavItemId in pageNavItemIdArray %} {% assign pageNavItem = page.page-nav-items | where: "id", pageNavItemId | first %}
 
-    {% for pageNavItemId in pageNavItemIdArray %}
-    
-    {% assign pageNavItem = page.page-nav-items | where: "id", pageNavItemId | first %}    
-    
-        <div class="page-nav-span">
-            <a class="page-nav custom-underline" onclick="javascript:Scroll('{{ pageNavItem.target }}');">{{pageNavItem.title}}</a>
-        </div>
-    
-    {% endfor %}
-  
+  <div class="page-nav-span">
+    <a class="page-nav custom-underline" onclick="javascript:Scroll('{{ pageNavItem.target }}');">{{pageNavItem.title}}</a>
+  </div>
+
+  {% endfor %}
 </div>
