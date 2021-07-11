@@ -1,13 +1,11 @@
 #course-banner {
-  // background-image: url("../img/coursebanner.jpg");
-  // background-position: 0px -130px;
   background-image: url("../img/banner-sprite.jpg");
   background-position: 98% 58%;
   background-size: 400%;
   background-repeat: no-repeat;
 }
 
-ul.lectureslist {
+ul.lectures-list {
   width: 90%;
 }
 
@@ -29,7 +27,7 @@ ul.lectureslist {
   height: auto;
 }
 
-.typical-leftcol {
+.typical-left-col {
   /*border:thin red solid;*/
   display: block;
   margin: 1px;
@@ -40,19 +38,19 @@ ul.lectureslist {
   height: 50px;
 }
 
-.typical-rightcol {
+.typical-right-col {
   /*border:thin blue solid;*/
   display: block;
 }
 
 @media only screen and (min-width: 390px) and (max-width: 749px) {
-  .typical-leftcol {
+  .typical-left-col {
     height: 30px;
   }
 }
 
 @media only screen and (min-width: 750px) {
-  .typical-leftcol {
+  .typical-left-col {
     height: 20px;
   }
 }

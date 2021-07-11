@@ -1,5 +1,4 @@
 #home-banner {
-  // background-image: url("../img/homebanner.jpg");
   background-image: url("../img/home-banner.jpg");
   background-position: 0px 73%;
   background-size: 110%;
@@ -33,13 +32,13 @@
   padding-top: 20px;
 }
 
-#westernaccreditationlogo {
+#western-accreditation-logo {
   float: left;
   padding-right: 40px;
 }
 
 @media only screen and (max-width: 750px) {
-  #westernaccreditationlogo {
+  #western-accreditation-logo {
     padding-bottom: 15px;
     display: block;
     float: none;
