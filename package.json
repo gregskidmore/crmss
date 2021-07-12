@@ -1,0 +1,27 @@
+{
+  "name": "crmss",
+  "version": "1.0.0",
+  "description": "Website for The Canadian Renaissance Music Summer School",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregskidmore/crmss.git"
+  },
+  "keywords": [
+    "CRMSS",
+    "Canadian",
+    "Renaissance",
+    "Music",
+    "Summer",
+    "School"
+  ],
+  "author": "Greg Skidmore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregskidmore/crmss/issues"
+  },
+  "homepage": "https://github.com/gregskidmore/crmss#readme"
+}
