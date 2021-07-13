@@ -5,4 +5,3 @@ Gemfile
 *.ps1
 .jekyll-cache
 .vscode/
-post-receive
