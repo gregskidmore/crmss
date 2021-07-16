@@ -7,6 +7,15 @@
 
 ul.lectures-list {
   width: 90%;
+  margin-bottom: 2em;
+}
+
+ul.lectures-list li {
+  padding-top: 1%;
+}
+
+ul.lectures-list li:first-child {
+  padding-top: 0;
 }
 
 #typical-container {
