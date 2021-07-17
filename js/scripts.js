@@ -17,4 +17,7 @@ $(document).ready(function () {
       $(this).addClass("open");
     }
   });
+  if (location.hash) {
+    Scroll(location.hash);
+  }
 });
