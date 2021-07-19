@@ -1,0 +1,31 @@
+#accommodation-banner {
+  background-image: url("../img/banner-sprite.jpg");
+  background-position: 60% 18%;
+  background-size: 350%;
+  background-repeat: no-repeat;
+}
+
+.accommodation-list {
+  @extend .lectures-list;
+}
+
+.under-accommodation-sub-h2 {
+  margin-top: 0;
+}
+
+.accommodation-note {
+  display: block;
+  margin: 1% 0 0 2rem;
+}
+
+.accommodation-quotation {
+  @extend .tutor-quotation;
+  font-weight: normal;
+}
+
+.accommodation-sub-h2 {
+  margin-top: 0;
+  position: relative;
+  display: block;
+  top: -20px;
+}

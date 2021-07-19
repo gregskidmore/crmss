@@ -12,6 +12,10 @@ ul.lectures-list {
 
 ul.lectures-list li {
   padding-top: 1%;
+
+  @media only screen and (max-width: 750px) {
+    padding-top: 3%;
+  }
 }
 
 ul.lectures-list li:first-child {
