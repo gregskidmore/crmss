@@ -9,16 +9,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Playfair+Display|Raleway" />
     <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
 
-    {%- comment -%} {% for css-package in page.css-packages %} {{ css-package }} {% endfor %} {%- endcomment -%}
-
     <link href="/img/clef.png" rel="icon" type="image/x-icon" />
 
     <script type="text/javascript" src="/js/jquery.scrollTo.js" defer></script>
     <script type="text/javascript" src="/js/featherlight.min.js" defer></script>
-
-    {% for script-package in page.script-packages %} {{ script-package }} {% endfor %}
-
-    <script type="text/javascript" src="/js/scripts.js"></script>
 
     <title>The Canadian Renaissance Music Summer School: {{page.title}}</title>
   </head>
@@ -40,6 +34,7 @@
   </body>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/js/scripts.js"></script>
 
   {% if page.id == "application-form" or page.id == "covid-survey" %} {% include application-script.html %} {% endif %}
 </html>
