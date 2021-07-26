@@ -56,17 +56,21 @@ page-nav-items:
     target: "#katherine-hill"
     represents: "The Toronto Consort, St Bartholomew, Regent Park"
     id: KHill
+  - title: "Terry McKenna"
+    target: "#terry"
+    represents: "The Toronto Consort, Stratford Festival, Wilfrid Laurier University"
+    id: TM
 ---
 
 <center>
-  <h1>CRMSS Tutors and International Scholars</h1>
+  <h1>CRMSS Tutors</h1>
 </center>
 
-{% include page-nav.html page-nav-item-ids="GS KH LH KHill AJ PM SS" %}
+{% include page-nav.html page-nav-item-ids="GS KH LH KHill AJ PM SS TM" %}
 
 <!-- ============ page-nav end  ============ -->
 
-{% assign all-tutors-id-array = "GS KH LH KHill AJ PM SS" | split: " " %}
+{% assign all-tutors-id-array = "GS KH LH KHill AJ PM SS TM" | split: " " %}
 
 {% for tutor-id in all-tutors-id-array %}
   {% assign tutor-page-data = page.page-nav-items | where: "id", tutor-id | first %}
