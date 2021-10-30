@@ -9,31 +9,33 @@
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.3) 0px 1px 3px 1px;
 }
 
-#nav-trigger span {
-  display: inline-block;
-  position: absolute;
-  padding: 4px 30px;
-  background-color: #ff0032;
-  color: white;
-  cursor: pointer;
-  //   text-transform: uppercase;
-  transform: translate(-50%, 35%);
-  border-radius: 8px;
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
+// Use this for the word 'Menu' on mobile view
+//
+// #nav-trigger span {
+//   display: inline-block;
+//   position: absolute;
+//   padding: 4px 30px;
+//   background-color: #ff0032;
+//   color: white;
+//   cursor: pointer;
+//   //   text-transform: uppercase;
+//   transform: translate(-50%, 35%);
+//   border-radius: 8px;
+//   font-family: "Playfair Display", serif;
+//   font-weight: bold;
 
-  &:active {
-    background-color: #e6002d;
-    box-shadow: $img-drop-shadow;
-    transition: all 0.1s;
-  }
+//   &:active {
+//     background-color: #e6002d;
+//     box-shadow: $img-drop-shadow;
+//     transition: all 0.1s;
+//   }
 
-  &.open {
-    background-color: #e6002d;
-    box-shadow: $img-drop-shadow;
-    transition: all 0.1s;
-  }
-}
+//   &.open {
+//     background-color: #e6002d;
+//     box-shadow: $img-drop-shadow;
+//     transition: all 0.1s;
+//   }
+// }
 
 #hamburger {
   position: absolute;
@@ -42,6 +44,17 @@
   display: inline-block;
   cursor: pointer;
   z-index: 100;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &:focus {
+    outline: none !important;
+  }
 }
 
 .bar1,
@@ -73,7 +86,7 @@
   transform: rotate(45deg) translate(-7px, -8px);
 }
 
-// These give the arrow next to the mobile-only menu button
+// These give the arrow next to the mobile-only 'Menu' button
 //
 // #nav-trigger span:after {
 //   display: inline-block;
@@ -178,6 +191,17 @@ nav#nav-mobile li {
   border: solid 1px #cc0028;
   border-radius: 8px;
   box-shadow: $img-drop-shadow;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &:focus {
+    outline: none !important;
+  }
 
   &:active {
     box-shadow: none;
