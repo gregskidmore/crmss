@@ -66,11 +66,13 @@ page-nav-items:
   <h1>CRMSS Tutors</h1>
 </center>
 
-{% include page-nav.html page-nav-item-ids="GS KH LH KHill AJ PM SS TM" %}
+{% include preliminary-warning-sub.html %}
+
+{% include page-nav.html page-nav-item-ids="GS KH LH" %}
 
 <!-- ============ page-nav end  ============ -->
 
-{% assign all-tutors-id-array = "GS KH LH KHill AJ PM SS TM" | split: " " %}
+{% assign all-tutors-id-array = "GS KH LH" | split: " " %}
 
 {% for tutor-id in all-tutors-id-array %}
   {% assign tutor-page-data = page.page-nav-items | where: "id", tutor-id | first %}

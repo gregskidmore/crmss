@@ -1,4 +1,4 @@
-#covid-warning {
+#preliminary-warning {
   border: thick red solid;
   background-color: #c1c1c1;
   padding: 2%;
@@ -6,7 +6,7 @@
   box-shadow: $drop-shadow;
 }
 
-#covid-warning-sub {
+#preliminary-warning-sub {
   border: thin red solid;
   border-radius: 8px;
   width: 92%;
@@ -19,7 +19,7 @@
   box-shadow: $drop-shadow;
 }
 
-#covid-warning h3 {
+#preliminary-warning h3 {
   padding: 0;
   margin: 0;
 }
