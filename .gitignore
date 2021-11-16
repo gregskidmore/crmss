@@ -1,6 +1,5 @@
 _config.yml
 .prettierignore
-Gemfile
 *.lock
 *.ps1
 .jekyll-cache
