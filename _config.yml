@@ -1,0 +1,27 @@
+sass:
+  style: compressed
+
+permalink: /:id
+
+url: https://www.crmss.org
+
+exclude:
+  - --*
+  - Gemfile*
+  - participants2018.html
+  - refresh-from-google.ps1
+  - mjml*
+
+nav-items:
+  - title: "Home"
+    url: /
+  - title: "Tutors"
+    url: /tutors
+  - title: "Our Patron"
+    url: /patron
+  - title: "The Course"
+    url: /course
+  - title: "Contact"
+    url: /contact
+  - title: "Donate"
+    url: /donate
