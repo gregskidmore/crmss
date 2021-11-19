@@ -68,11 +68,11 @@ page-nav-items:
 
 {% include preliminary-warning-sub.html %}
 
-{% include page-nav.html page-nav-item-ids="GS KH LH" %}
+{% include page-nav.html page-nav-item-ids="GS LH KH RH" %}
 
 <!-- ============ page-nav end  ============ -->
 
-{% assign all-tutors-id-array = "GS KH LH" | split: " " %}
+{% assign all-tutors-id-array = "GS LH KH RH" | split: " " %}
 
 {% for tutor-id in all-tutors-id-array %}
   {% assign tutor-page-data = page.page-nav-items | where: "id", tutor-id | first %}
