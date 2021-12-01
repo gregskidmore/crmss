@@ -37,7 +37,7 @@ page-nav-items:
     represents: "Director of I Fagiolini, Reader in Music at the University of York, UK"
     id: RH
   - title: "CRMSS International Scholars"
-    target: "#sves2021"
+    target: "#sves2022"
     represents: "University of York, UK"
     id: SVES
   - title: "Dr. Aaron James"
@@ -66,13 +66,21 @@ page-nav-items:
   <h1>CRMSS Tutors</h1>
 </center>
 
-{% include preliminary-warning-sub.html %}
+{%- comment -%}{% include preliminary-warning-sub.html %}{%- endcomment -%}
 
-{% include page-nav.html page-nav-item-ids="GS LH KH RH" %}
+{% include page-nav.html page-nav-item-ids="GS LH KH" %}
+
+<hr>
+
+{% include page-nav.html page-nav-item-ids="RH" %}
+
+<hr>
+
+{% include page-nav.html page-nav-item-ids="SVES" %}
 
 <!-- ============ page-nav end  ============ -->
 
-{% assign all-tutors-id-array = "GS LH KH RH" | split: " " %}
+{% assign all-tutors-id-array = "GS LH KH RH SVES" | split: " " %}
 
 {% for tutor-id in all-tutors-id-array %}
   {% assign tutor-page-data = page.page-nav-items | where: "id", tutor-id | first %}
