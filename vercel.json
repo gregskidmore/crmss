@@ -2,7 +2,7 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/apply",
+      "source": "/apply/index.html",
       "destination": "/contact.html"
     }
   ]
