@@ -24,24 +24,27 @@
     <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 <script>
-    window.fbAsyncInit = function () {
-        FB.init({
-            xfbml: true,
-            version: 'v10.0'
-        });
-    };
+  window.fbAsyncInit = function () {
+    FB.init({
+      xfbml: true,
+      version: "v12.0",
+    });
+  };
 
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+  (function (d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  })(document, "script", "facebook-jssdk");
+</script>
 
 <!-- Your Chat Plugin code -->
-<div class="fb-customerchat" attribution="setup_tool" page_id="912326845588575" theme_color="#ff0132">
-</div>
+<div class="fb-customerchat" attribution="setup_tool" page_id="912326845588575" theme_color="#ff0132"></div>
+
 
     <div id="big-container">
       <div class="banner-holder" id="home-banner">
@@ -213,9 +216,9 @@
     yours to keep after the course finishes.
   </p>
   <p>
-    Successful applicants will be asked to provide a deposit before the course begins to secure their place of $200. This will be counted against the total course
-    fee, the remainder of which will be due later. Once fees are paid, CRMSS reserves the right to limit any refund, taking into account the individual circumstances
-    of a participant's cancellation.
+    Successful applicants will be asked to provide a deposit before the course begins to secure their place of <b>$200</b>. This will be counted against the total
+    course fee, the remainder of which will be due later. Once fees are paid, CRMSS reserves the right to limit any refund, taking into account the individual
+    circumstances of a participant's cancellation.
   </p>
 
   <p>
