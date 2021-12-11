@@ -12,6 +12,28 @@
   box-shadow: $drop-shadow;
 }
 
+#twitter-block-a {
+  // border: thin solid black;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: url("../img/png-transparent-social-media.png");
+  background-position: 20% 50%;
+  background-size: 400%;
+  background-repeat: no-repeat;
+}
+
+#facebook-block-a {
+  // border: thin solid black;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: url("../img/png-transparent-social-media.png");
+  background-position: 50% -7%;
+  background-size: 400%;
+  background-repeat: no-repeat;
+}
+
 #facebook-review-image {
   width: 75px;
 }
