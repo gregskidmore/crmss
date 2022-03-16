@@ -72,7 +72,7 @@ page-nav-items:
 
 <hr>
 
-{% include page-nav.html page-nav-item-ids="GS LH KH SS" %}
+{% include page-nav.html page-nav-item-ids="GS LH KH KHill SS" %}
 
 <hr>
 
@@ -80,7 +80,7 @@ page-nav-items:
 
 <!-- ============ page-nav end  ============ -->
 
-{% assign all-tutors-id-array = "GS RH LH KH SS SVES" | split: " " %}
+{% assign all-tutors-id-array = "GS RH LH KH KHill SS SVES" | split: " " %}
 
 {% for tutor-id in all-tutors-id-array %}
   {% assign tutor-page-data = page.page-nav-items | where: "id", tutor-id | first %}
