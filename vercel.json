@@ -9,8 +9,7 @@
   "redirects": [
     {
       "source": "/lute-day-2022-application-form",
-      "destination": "/lute-day-2022-registration-form",
-      "permanent": "true"
+      "destination": "/lute-day-2022-registration-form"
     }
   ]
 }
