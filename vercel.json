@@ -4,6 +4,10 @@
     {
       "source": "/apply",
       "destination": "/contact"
+    },
+    {
+      "source": "/lute-day-2022-application-form",
+      "destination": "/lute-day-2022-registration-form"
     }
   ]
 }
