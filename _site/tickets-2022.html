@@ -3,7 +3,7 @@
   <head>
     <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="VIEWPORT" CONTENT="width=device-width,initial-scale=1.0">
-<META NAME="TITLE" CONTENT="The Canadian Renaissance Music Summer School: Lute Registration Form">
+<META NAME="TITLE" CONTENT="The Canadian Renaissance Music Summer School: CRMSS 2022 Tickets Form">
 <META NAME="DESCRIPTION" CONTENT="">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -17,7 +17,7 @@
     <script type="text/javascript" src="/js/jquery.scrollTo.js" defer></script>
     <script type="text/javascript" src="/js/featherlight.min.js" defer></script>
 
-    <title>The Canadian Renaissance Music Summer School: Lute Registration Form</title>
+    <title>The Canadian Renaissance Music Summer School: CRMSS 2022 Tickets Form</title>
   </head>
 
   <body>
@@ -47,7 +47,7 @@
 
 
     <div id="big-container">
-      <div class="banner-holder" id="lute-registration-banner">
+      <div class="banner-holder" id="tickets-2022-banner">
         <div class="top-header-container">
           <div class="topheader"><span id="topheaderspan">The Canadian Renaissance Music Summer School</span></div>
         </div>
@@ -75,20 +75,27 @@
 <nav id="nav-mobile"></nav>
 
 
-      <div id="content"><div id="homecontainer">
-
-  <div class="lute-responsive">
-
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftk7z4z0ltu_AHMnDCKbibdKnlqQ7W8rUuVF3gtaGoutRm_g/viewform?embedded=true" width="540" height="3500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-  </div>
-
-</div></div>
+      <div id="content">
+<div id="google-form-container">
+  <!-- <div class="parking-responsive"> -->
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfRENGs0CkqS_K4B3TxxYf8CTYasH0zuJu5RF40ezUlv2Fhlw/viewform?embedded=true" width="100%" height="1650" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <!-- </div> -->
+</div>
+</div>
     </div>
   </body>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="/js/scripts.js"></script>
 
-  
+   <script>
+    document.querySelector("iframe").addEventListener("load",
+        function () {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+        });
+</script> 
 </html>
